@@ -3,9 +3,12 @@ body {
 }
 
 .div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 200px;
   width: 200px;
   background-color: pink;
@@ -15,3 +18,91 @@ img {
   width: 300px;
   height: 400px;
 }
+
+.conteiner-section-product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 400px;
+}
+
+.conteiner-section-product .conteiner-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.conteiner-section-product .conteiner-list .conteiner-product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 150px;
+  width: 100px;
+  border: 2px solid red;
+  margin: 40px;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.conteiner-section-product .conteiner-list .conteiner-product .conteiner-top {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #C0D6DF;
+  border: 2px solid black;
+  height: 100px;
+  width: 100px;
+}
+
+.conteiner-section-product .conteiner-list .conteiner-product .conteiner-top .product {
+  width: 100%;
+  height: auto;
+}
+
+@supports ((-o-object-fit: cover) or (object-fit: cover)) {
+  .conteiner-section-product .conteiner-list .conteiner-product .conteiner-top .product {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center center;
+       object-position: center center;
+  }
+}
+
+.conteiner-section-product .conteiner-list .conteiner-product .conteiner-bot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: 50px;
+  width: 100px;
+}
+
+.conteiner-section-product .conteiner-list .conteiner-product .conteiner-bot .titulo-product {
+  visibility: hidden;
+}
+
+.conteiner-section-product .conteiner-list .conteiner-product:hover {
+  height: 175px;
+}
+/*# sourceMappingURL=styles.css.map */
