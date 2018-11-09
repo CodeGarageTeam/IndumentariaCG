@@ -108,7 +108,7 @@ img {
 
 header {
   width: 100%;
-  background: #fff159;
+  background: #BDBDBD;
   overflow: hidden;
   margin-bottom: 20px;
 }
@@ -145,7 +145,7 @@ header .buttoms a {
 }
 
 header .buttoms a:hover {
-  background: black;
+  background: orange;
   border-radius: 50px;
 }
 /*# sourceMappingURL=styles.css.map */
