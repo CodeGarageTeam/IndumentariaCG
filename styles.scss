@@ -25,6 +25,11 @@ body {
             display: flex;
             flex-direction: row;
             justify-content: center;
+
+            .card-image {
+              border-bottom: 2px solid black;
+
+            }
             .conteiner-product {
               display: flex;
               flex-direction: column;

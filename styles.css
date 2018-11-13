@@ -43,6 +43,10 @@ img {
           justify-content: center;
 }
 
+.conteiner-section-product .conteiner-list .card-image {
+  border-bottom: 2px solid black;
+}
+
 .conteiner-section-product .conteiner-list .conteiner-product {
   display: -webkit-box;
   display: -ms-flexbox;
