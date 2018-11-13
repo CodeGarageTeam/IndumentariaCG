@@ -1,7 +1,3 @@
-body {
-  background-color: orange;
-}
-
 .div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -63,6 +59,14 @@ img {
   transition: all .5s ease;
 }
 
+.conteiner-section-product .conteiner-list .conteiner-product:hover {
+  height: 175px;
+}
+
+.conteiner-section-product .conteiner-list .conteiner-product:hover .conteiner-bot p {
+  opacity: 1;
+}
+
 .conteiner-section-product .conteiner-list .conteiner-product .conteiner-top {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -102,11 +106,57 @@ img {
   width: 100px;
 }
 
-.conteiner-section-product .conteiner-list .conteiner-product .conteiner-bot .titulo-product {
-  visibility: hidden;
+.conteiner-section-product .conteiner-list .conteiner-product .conteiner-bot p {
+  opacity: 0;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
 }
 
-.conteiner-section-product .conteiner-list .conteiner-product:hover {
-  height: 175px;
+header {
+  width: 100%;
+  background-color: #FAFAFA;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.logo {
+  font-size: 50px;
+  line-height: 100px;
+  float: left;
+}
+
+header .buttoms {
+  line-height: 100px;
+  float: right;
+}
+
+header .buttoms a {
+  font-family: "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+  color: #333;
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 20px;
+  line-height: normal;
+  font-size: 20px;
+  font-weight: bold;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+  cursor: pointer;
+}
+
+header .buttoms a:hover {
+  background: orange;
+  border-radius: 50px;
+}
+
+.fondoFooter {
+  background: url(imagenes-josu/tiny-squares.png);
 }
 /*# sourceMappingURL=styles.css.map */
