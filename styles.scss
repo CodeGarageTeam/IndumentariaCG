@@ -22,6 +22,7 @@
             display: flex;
             flex-direction: row;
             justify-content: center;
+
             .conteiner-product {
               display: flex;
               flex-direction: column;
@@ -30,7 +31,15 @@
               border: 2px solid red;
               margin: 40px;
               transition: all .5s ease;
-              
+              &:hover {
+                height: 175px;
+
+                .conteiner-bot {
+                  p {
+                    opacity: 1;
+                  }
+                }
+              }
                 .conteiner-top {
                   justify-content: center;
                   align-items: center;
@@ -56,14 +65,11 @@
                   justify-content: flex-start;
                   height: 50px;
                   width:  100px;
-                    .titulo-product {
-                    visibility: hidden;
+                    p {
+                      opacity: 0;
+                      transition: 0.3s all ease-in-out;
                     }
                 }
-
-            }
-            .conteiner-product:hover {
-              height: 175px;
             }
         }
   }
@@ -115,4 +121,6 @@
          border-radius: 50px;
      }
 
-    
+.fondoFooter {
+  background: url(imagenes-josu/tiny-squares.png)
+}
