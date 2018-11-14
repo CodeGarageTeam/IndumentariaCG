@@ -10,11 +10,6 @@
   background-color: pink;
 }
 
-img {
-  width: 300px;
-  height: 400px;
-}
-
 .container-section-product {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -80,7 +75,6 @@ img {
   background-color: #C0D6DF;
   height: 240px;
 }
-.conteiner-section-product .conteiner-list .conteiner-product .conteiner-top .product {
 
 .container-section-product .container-list .container-product .container-top .product {
   width: 100%;
@@ -140,7 +134,7 @@ header .buttoms {
 }
 
 header .buttoms a {
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
   color: #333;
   display: inline-block;
   text-decoration: none;
@@ -149,7 +143,6 @@ header .buttoms a {
   font-size: 20px;
   font-weight: bold;
   -webkit-transition: all 500ms ease;
-  -o-transition: all 500ms ease;
   transition: all 500ms ease;
   cursor: pointer;
 }
@@ -164,20 +157,25 @@ header .buttoms a:hover {
 }
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
+
 * body {
   font-family: Verdana, sans-serif;
   margin: 0;
 }
+
 * body .slideshow-container {
   width: 100%;
   position: relative;
   margin: auto;
 }
+
 * body .slideshow-container .mySlides {
   display: none;
 }
+
 * body .slideshow-container .mySlides .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -185,11 +183,13 @@ header .buttoms a:hover {
   position: absolute;
   top: 0;
 }
+
 * body .slideshow-container .mySlides img {
   width: 100%;
   height: 500px;
   vertical-align: middle;
 }
+
 * body .slideshow-container .mySlides .prev, * body .slideshow-container .mySlides .next {
   cursor: pointer;
   position: absolute;
@@ -200,13 +200,16 @@ header .buttoms a:hover {
   color: white;
   font-weight: bold;
   font-size: 18px;
+  -webkit-transition: 0.6s ease;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
 }
+
 * body .slideshow-container .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
+
 * body .slideshow-container .text {
   color: #f2f2f2;
   font-size: 15px;
@@ -216,6 +219,7 @@ header .buttoms a:hover {
   width: 100%;
   text-align: center;
 }
+
 * body .slideshow-container .text .dot {
   cursor: pointer;
   height: 15px;
@@ -224,6 +228,7 @@ header .buttoms a:hover {
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
   transition: background-color 0.6s ease;
 }
 
@@ -247,39 +252,26 @@ header .buttoms a:hover {
 
 @-webkit-keyframes fade {
   from {
-    opacity: 0.4;
+    opacity: .4;
   }
   to {
     opacity: 1;
   }
 }
+
 @keyframes fade {
   from {
-    opacity: 0.4;
+    opacity: .4;
   }
   to {
     opacity: 1;
   }
 }
+
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next, .text {
     font-size: 11px;
   }
-}
-
-/*# sourceMappingURL=styles.css.map */
-footer {
-  bottom: 50px;
-  width: 100%;
-  height: 500px;
-  background: url("fondisho.png");
-  background-repeat: repeat;
-  /*background-size: 50%;
-         position:absolute;
-         bottom:5px;
-         right:10px;
-          width: 100%;
-         height: 5%;*/
 }
 /*# sourceMappingURL=styles.css.map */
