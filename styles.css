@@ -79,7 +79,6 @@ img {
   height: 100px;
   width: 100px;
 }
-
 .conteiner-section-product .conteiner-list .conteiner-product .conteiner-top .product {
   width: 100%;
   height: auto;
@@ -138,7 +137,7 @@ header .buttoms {
 }
 
 header .buttoms a {
-  font-family: "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   color: #333;
   display: inline-block;
   text-decoration: none;
@@ -147,6 +146,7 @@ header .buttoms a {
   font-size: 20px;
   font-weight: bold;
   -webkit-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
   transition: all 500ms ease;
   cursor: pointer;
 }
@@ -156,6 +156,116 @@ header .buttoms a:hover {
   border-radius: 50px;
 }
 
+.fondoFooter {
+  background: url(imagenes-josu/tiny-squares.png);
+}
+
+* {
+  box-sizing: border-box;
+}
+* body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+* body .slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+* body .slideshow-container .mySlides {
+  display: none;
+}
+* body .slideshow-container .mySlides .numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+* body .slideshow-container .mySlides img {
+  width: 100%;
+  height: 500px;
+  vertical-align: middle;
+}
+* body .slideshow-container .mySlides .prev, * body .slideshow-container .mySlides .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+* body .slideshow-container .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+* body .slideshow-container .text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+* body .slideshow-container .text .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The dots/bullets/indicators */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next, .text {
+    font-size: 11px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
 footer {
   bottom: 50px;
   width: 100%;
