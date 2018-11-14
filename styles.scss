@@ -125,11 +125,12 @@
          border-radius: 50px;
      }
 
-    .footerFondo {
+    footer {
+        bottom:50px;
          width: 100%;
-         height: 20%;
+         height: 500px;
          background: url('fondisho.png');
-         background-repeat: no-repeat;
+         background-repeat:repeat;
        /*background-size: 50%;
          position:absolute;
          bottom:5px;
