@@ -1,4 +1,8 @@
 
+  * {
+    padding: 0px;
+    margin: 0px;
+  }
   .div {
     display: flex;
   
@@ -20,26 +24,22 @@
 
           .card {
             height: 100px;
-          
-            .card-image {
-              
-              }
+
             }
             
             .container-product {
               display: flex;
               flex-direction: column;
-              height: 300px;
+              height: 270px;
               width: 200px;
-              border: 2px solid red;
+              border: 1px solid gray;
               border-radius: 4px;
               margin: 40px;
+              margin-bottom: 70px;
               transition: all .2s ease;
               &:hover {
                 height: 320px;
                 box-shadow: 3px 7px 24px 3px rgba(0,0,0,0.41);
-                
-
                 .container-bot {
                   p {
                     opacity: 1;
@@ -50,34 +50,41 @@
                 .container-top {
                   justify-content: center;
                   align-items: center;
-                  background-color: #C0D6DF;
                   height: 240px;
+                  background-image: url(imagenes-josu/product2.jpg) ;
+                  background-size: cover;
+                  
+                  
+                  
                   .product {
                     width: 100%;
                     height: auto;
                   }
-                  @supports(object-fit: cover){
-                    .product{
-                      height: 100%;
-                      object-fit: cover;
-                      object-position: center center;
-                        }
-                      }  
-
                 }
                 .container-bot {
                   display: flex;
-                  justify-content: flex-start;
-                  height: 60px;
-                  border-top: .5px  black;
+                  flex-direction: column;
+                  margin-bottom: 0px;
+                  height: 200px !important;
+                  border-top: .5px solid grey;
+                  
+                    .precio {
+                      display: flex;
+                      margin-left: 15px;
+                    }
                     p {
+                      display: flex;
+                      justify-content: center;
+                      width: 200px;
+                      text-align: center;
                       opacity: 0;
                       transition: 0.3s all ease-in-out;
                     }
+                  }
                 }
             }
         }
-  }
+  
 
 
 
