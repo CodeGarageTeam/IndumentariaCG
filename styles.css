@@ -1,3 +1,8 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
 .div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10,12 +15,7 @@
   background-color: pink;
 }
 
-img {
-  width: 300px;
-  height: 400px;
-}
-
-.conteiner-section-product {
+.container-section-product {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -23,10 +23,10 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 400px;
+  height: 600px;
 }
 
-.conteiner-section-product .conteiner-list {
+.container-section-product .container-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,11 +39,11 @@ img {
           justify-content: center;
 }
 
-.conteiner-section-product .conteiner-list .card-image {
-  border-bottom: 2px solid black;
+.container-section-product .container-list .card {
+  height: 100px;
 }
 
-.conteiner-section-product .conteiner-list .conteiner-product {
+.container-section-product .container-list .container-product {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -51,62 +51,72 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 150px;
-  width: 100px;
-  border: 2px solid red;
+  height: 270px;
+  width: 200px;
+  border: 1px solid gray;
+  border-radius: 4px;
   margin: 40px;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
+  margin-bottom: 70px;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
 }
 
-.conteiner-section-product .conteiner-list .conteiner-product:hover {
-  height: 175px;
+.container-section-product .container-list .container-product:hover {
+  height: 320px;
+  -webkit-box-shadow: 3px 7px 24px 3px rgba(0, 0, 0, 0.41);
+          box-shadow: 3px 7px 24px 3px rgba(0, 0, 0, 0.41);
 }
 
-.conteiner-section-product .conteiner-list .conteiner-product:hover .conteiner-bot p {
+.container-section-product .container-list .container-product:hover .container-bot p {
   opacity: 1;
 }
 
-.conteiner-section-product .conteiner-list .conteiner-product .conteiner-top {
+.container-section-product .container-list .container-product .container-top {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #C0D6DF;
-  border: 2px solid black;
-  height: 100px;
-  width: 100px;
+  height: 240px;
+  background-image: url(imagenes-josu/product2.jpg);
+  background-size: cover;
 }
 
-.conteiner-section-product .conteiner-list .conteiner-product .conteiner-top .product {
+.container-section-product .container-list .container-product .container-top .product {
   width: 100%;
   height: auto;
 }
 
-@supports ((-o-object-fit: cover) or (object-fit: cover)) {
-  .conteiner-section-product .conteiner-list .conteiner-product .conteiner-top .product {
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    -o-object-position: center center;
-       object-position: center center;
-  }
-}
-
-.conteiner-section-product .conteiner-list .conteiner-product .conteiner-bot {
+.container-section-product .container-list .container-product .container-bot {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  height: 50px;
-  width: 100px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 0px;
+  height: 200px !important;
+  border-top: .5px solid grey;
 }
 
-.conteiner-section-product .conteiner-list .conteiner-product .conteiner-bot p {
+.container-section-product .container-list .container-product .container-bot .precio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 15px;
+}
+
+.container-section-product .container-list .container-product .container-bot p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 200px;
+  text-align: center;
   opacity: 0;
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
@@ -156,6 +166,7 @@ header .buttoms a:hover {
   border-radius: 50px;
 }
 
+<<<<<<< HEAD
 footer {
   width: 100%;
   height: 300px;
@@ -167,5 +178,128 @@ footer {
          right:10px;
           width: 100%;
          height: 5%;*/
+=======
+.fondoFooter {
+  background: url(imagenes-josu/tiny-squares.png);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+
+* body .slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+* body .slideshow-container .mySlides {
+  display: none;
+}
+
+* body .slideshow-container .mySlides .numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+* body .slideshow-container .mySlides img {
+  width: 100%;
+  height: 500px;
+  vertical-align: middle;
+}
+
+* body .slideshow-container .mySlides .prev, * body .slideshow-container .mySlides .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+* body .slideshow-container .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+* body .slideshow-container .text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+* body .slideshow-container .text .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The dots/bullets/indicators */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next, .text {
+    font-size: 11px;
+  }
+>>>>>>> 76f0061ed949e52d03af959a595681f36fe9ccd4
 }
 /*# sourceMappingURL=styles.css.map */

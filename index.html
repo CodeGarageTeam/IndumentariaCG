@@ -9,8 +9,6 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="promos.css">
   <script src="jquery-1.9.1.min.js"></script>  
-  <link rel="stylesheet" type="text/css" href="glider.min.css" />
-  <script src="glider.min.js"></script>
 
   <title>Code Garage INC.</title>
 </head>
@@ -18,16 +16,17 @@
 <body>
   
   <!-- header seba -->
-    <header class=> 
+    <header > 
       <div class="wrapper"> 
         
         <div class="logo"> CG</div>
         
-          <div class="buttoms"> 
-          <a href="#">Categorias</a>
-          <a href="#">Ofertas</a>
+          <div class="buttoms">
+            <a href="#">Productos</a>
+          <a href=#scroll> Ofertas </a>
           <a href="#">Contacto</a>
-          </div>
+         
+        </div>
         
       </div>
     </header>
@@ -43,226 +42,55 @@
   </div>
   <!-- promociones lole -->
   <section>
-  <script>
-          window.addEventListener('load',function(){
-            // example event hook implementing basic lazy loading images
-    
-            document.querySelector('.glider').addEventListener('glider-slide-visible', function(event){
-                var imgs_to_anticipate = 3;
-                var glider = Glider(this);
-                for (var i = 0; i <= imgs_to_anticipate; ++i){
-                    var index = Math.min(event.detail.slide + i, glider.slides.length - 1),
-                        glider = glider;
-                    loadImages.call(glider.slides[index],function(){
-                        glider.refresh(true);
-                    })
-                }
-            });
-    
-            window._ = new Glider(document.querySelector('.glider'), {
-                slidesToShow: 'auto',
-                itemWidth: 300,
-                slidesToScroll: 'auto',
-                draggable: true,
-                dots: '#dots',
-                arrows: {
-                    prev: '.glider-prev',
-                    next: '.glider-next'
-                }
-            });
-            function loadImages(callback){
-                [].forEach.call(this.querySelectorAll('img'),function(img){
-                    var _img = new Image,  _src = img.getAttribute('data-src');
-                    _img.onload = function(){
-                        img.src = _src;
-                        img.classList.add('loaded');
-                        callback && callback(img);
-                    }
-                    if(img.src !== _src) _img.src = _src;
-                });
-            }
-          });
-    
-  </script>
-     <div class="glider-contain">
-        <div class="glider">
-            <div><!-- la promocion -->
-              <div class="product-image">
-                <img alt="Test" data-src="http://placehold.it/300x300?text=1"><!-- imagen del producto -->
-                </div>
-                <div class="poduct-data"><!-- Container de texto -->
-                  <p>product name</p> <!-- Nombre del producto -->
-                  <h3>product price</h3> <!-- Precio del producto -->
-                </div>
+     
+          <div id="scroll"class="product-offer"><!-- la promocion -->
+            <div class="product-image"> <!-- container de la imagen -->
+              <img src="#" alt="error"><!-- imagen del producto -->
             </div>
-            <div>
-              <div class="product-image">
-                <img alt="Test" data-src="http://placehold.it/300x300?text=2">
-                </div>
-                <div class="poduct-data">
-                  <p>product name</p>
-                  <h3>product price</h3>
-                </div>
+            <div class="poduct-data"><!-- Container de texto -->
+              <p>product name</p> <!-- Nombre del producto -->
+              <h3>product price</h3> <!-- Precio del producto -->
             </div>
-            <div>
-                <div class="product-image">
-                  <img alt="Test" data-src="http://placehold.it/300x300?text=3">
-                  </div>
-                  <div class="poduct-data">
-                    <p>product name</p>
-                    <h3>product price</h3>
-                  </div>
-              </div>
-              <div>
-                  <div class="product-image">
-                    <img alt="Test" data-src="http://placehold.it/300x300?text=4">
-                    </div>
-                    <div class="poduct-data">
-                      <p>product name</p>
-                      <h3>product price</h3>
-                    </div>
-                </div>
-                <div>
-                    <div class="product-image">
-                      <img alt="Test" data-src="http://placehold.it/300x300?text=5">
-                      </div>
-                      <div class="poduct-data">
-                        <p>product name</p>
-                        <h3>product price</h3>
-                      </div>
-                  </div>
-                  <div>
-                      <div class="product-image">
-                        <img alt="Test" data-src="http://placehold.it/300x300?text=6">
-                        </div>
-                        <div class="poduct-data">
-                          <p>product name</p>
-                          <h3>product price</h3>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="product-image">
-                          <img alt="Test" data-src="http://placehold.it/300x300?text=7">
-                          </div>
-                          <div class="poduct-data">
-                            <p>product name</p>
-                            <h3>product price</h3>
-                          </div>
-                      </div>
-                      <div>
-                          <div class="product-image">
-                            <img alt="Test" data-src="http://placehold.it/300x300?text=8">
-                            </div>
-                            <div class="poduct-data">
-                              <p>product name</p>
-                              <h3>product price</h3>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="product-image">
-                              <img alt="Test" data-src="http://placehold.it/300x300?text=9">
-                              </div>
-                              <div class="poduct-data">
-                                <p>product name</p>
-                                <h3>product price</h3>
-                              </div>
-                          </div>
-                          <div>
-                              <div class="product-image">
-                                <img alt="Test" data-src="http://placehold.it/300x300?text=10">
-                                </div>
-                                <div class="poduct-data">
-                                  <p>product name</p>
-                                  <h3>product price</h3>
-                                </div>
-                            </div>
-        </div>
-        <div id="dots"></div>
-        <a class="glider-prev">&laquo;</a>
-        <a class="glider-next">&raquo;</a>
+          </div>
+     
   </section>
 
   <!-- productos josu / modal byuto -->
-  <div class="conteiner-section-product">
-    <div class="conteiner-list">
-
-      <div class="conteiner-product">
-        <div class="conteiner-top">
-          <a href="#"><img class="product" src="imagenes-josu/product1.jpg" alt=""></a>
-        </div>
-        <div class="conteiner-bot">
-          <p>$XXX</p>
-        </div>
-      </div>
-      <div class="row">
-          <div class="col s12 m5">
-            <div class="card">
-              <div class="card-image">
-                <img src="imagenes-josu/product2.jpg">
-                <span class="card-title">PEPITO</span>
-                <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
-              </div>
-              <div class="card-content">
-                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col s12 m5">
-              <div class="card">
-                <div class="card-image">
-                  <img src="imagenes-josu/product3.jpg">
-                  <span class="card-title">PEPITO</span>
-                  <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
-                </div>
-                <div class="card-content">
-                  <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-                </div>
-              </div>
-            </div>
-          <div class="col s12 m5">
-          <div class="card">
-            <div class="card-image">
-              <img src="imagenes-josu/product4.jpg">
-              <span class="card-title">PEPITO</span>
-              <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
-            </div>
-            <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-            </div>
-          </div>
-          </div>
-        </div>     
-      <div class="conteiner-product">
-            <div class="conteiner-top">
+  <div class="container-section-product">
+    <div class="container-list">
+      <div class="container-product">
+            <div class="container-top">
               <a href="#"><img class="product" src="imagenes-josu/product3.jpg" alt=""></a>
             </div>
-            <div class="conteiner-bot">
-              <p>$XXX</p>
+            <div class="container-bot">
+              <h5 class="precio"> $1650</h5>
+              <p>Ardidas Reacidosas A69</p>
             </div>
       </div>
-      <div class="conteiner-product">
-              <div class="conteiner-top">
+      <div class="container-product">
+              <div class="container-top">
                 <a href="#"><img class="product" src="imagenes-josu/product4.jpg" alt=""></a>
               </div>
-              <div class="conteiner-bot">
-                <p class="precio">$XXX</p>
-                <p class="titulo-product">Zapatillas Energy Cloud M adidas</p>
+              <div class="container-bot">
+                  <h5 class="precio"> $1200</h5>
+                  <p>Adidas Mancmodel M7x4</p>
               </div>
       </div>
-      <div class="conteiner-product">
-                <div class="conteiner-top">
+      <div class="container-product">
+                <div class="container-top">
                   <a href="#"><img class="product" src="imagenes-josu/product5.jpg" alt=""></a>
                 </div>
-                <div class="conteiner-bot">
-                  <p>$XXX</p>
+                <div class="container-bot">
+                    <h5 class="precio"> $1499</h5>
+                    <p>Adidas Bronce V Plus </p>
                 </div>
       </div>
-    </div>
   </div>
 
   <button onclick="mostrarModal()">soy un producto</button>
 
   <!-- footer matu -->
+<<<<<<< HEAD
 <footer>
   <div class="footerFondo"></div>
 <a href="#" target></a>
@@ -274,6 +102,17 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="index.js"></script>
+=======
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="index.js"></script>
+  <p>asdasd</p>
+  <div class="fondoFooter" ></div>
+
+
+
+
+>>>>>>> 76f0061ed949e52d03af959a595681f36fe9ccd4
 </body>
 
 </html>
