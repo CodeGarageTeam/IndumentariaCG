@@ -5,6 +5,7 @@
   }
   .div {
     display: flex;
+
   
     align-items: center;
     height: 200px;
@@ -16,6 +17,7 @@
       display: flex;
       flex-direction: column;
       height: 600px;
+      background-color: #BFBFBF;
 
         .container-list {
             display: flex;
@@ -32,8 +34,7 @@
               flex-direction: column;
               height: 270px;
               width: 200px;
-              border: 1px solid gray;
-              border-radius: 4px;
+              border-radius: 5px 5px 0 0;
               margin: 40px;
               margin-bottom: 70px;
               transition: all .2s ease;
@@ -53,10 +54,12 @@
                   height: 240px;
                   background-image: url(imagenes-josu/product2.jpg) ;
                   background-size: cover;
+                  border-radius: 5px 5px 0 0;
                   
                   
                   
                   .product {
+                    border-radius: 5px 5px 0 0;
                     width: 100%;
                     height: auto;
                   }
@@ -67,6 +70,8 @@
                   margin-bottom: 0px;
                   height: 200px !important;
                   border-top: .5px solid grey;
+                  border-radius: 0 0 5px 5px;
+                  background-color: white;
                   
                     .precio {
                       display: flex;
