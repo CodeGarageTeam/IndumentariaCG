@@ -1,3 +1,8 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
 .div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -19,6 +24,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   height: 600px;
+  background-color: #E8E8E8;
 }
 
 .container-section-product .container-list {
@@ -46,13 +52,15 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 300px;
+  height: 270px;
   width: 200px;
-  border: 2px solid red;
-  border-radius: 4px;
+  border-radius: 5px;
   margin: 40px;
+  margin-bottom: 70px;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
+  -webkit-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.24);
+          box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.24);
 }
 
 .container-section-product .container-list .container-product:hover {
@@ -72,37 +80,49 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #C0D6DF;
   height: 240px;
+  background-image: url(imagenes-josu/product2.jpg);
+  background-size: cover;
+  border-radius: 5px 5px 0 0;
 }
 
 .container-section-product .container-list .container-product .container-top .product {
+  border-radius: 5px 5px 0 0;
   width: 100%;
   height: auto;
-}
-
-@supports ((-o-object-fit: cover) or (object-fit: cover)) {
-  .container-section-product .container-list .container-product .container-top .product {
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    -o-object-position: center center;
-       object-position: center center;
-  }
 }
 
 .container-section-product .container-list .container-product .container-bot {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  height: 60px;
-  border-top: .5px  black;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 0px;
+  height: 200px !important;
+  border-top: .5px solid grey;
+  border-radius: 0 0 5px 5px;
+  background-color: white;
+}
+
+.container-section-product .container-list .container-product .container-bot .precio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 15px;
 }
 
 .container-section-product .container-list .container-product .container-bot p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 200px;
+  text-align: center;
   opacity: 0;
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;

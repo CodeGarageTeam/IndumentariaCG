@@ -1,6 +1,11 @@
 
+  * {
+    padding: 0px;
+    margin: 0px;
+  }
   .div {
     display: flex;
+
   
     align-items: center;
     height: 200px;
@@ -12,6 +17,7 @@
       display: flex;
       flex-direction: column;
       height: 600px;
+      background-color: #E8E8E8;
 
         .container-list {
             display: flex;
@@ -20,29 +26,26 @@
 
           .card {
             height: 100px;
-          
-            .card-image {
-              
-              }
+
             }
             
             .container-product {
               display: flex;
               flex-direction: column;
-              height: 300px;
+              height: 270px;
               width: 200px;
-              border: 2px solid red;
-              border-radius: 4px;
+              border-radius: 5px;
               margin: 40px;
+              margin-bottom: 70px;
               transition: all .2s ease;
+              box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.24);
               &:hover {
                 height: 320px;
                 box-shadow: 3px 7px 24px 3px rgba(0,0,0,0.41);
-                
-
                 .container-bot {
                   p {
                     opacity: 1;
+                    
                     
                   }
                 }
@@ -50,34 +53,46 @@
                 .container-top {
                   justify-content: center;
                   align-items: center;
-                  background-color: #C0D6DF;
                   height: 240px;
+                  background-image: url(imagenes-josu/product2.jpg) ;
+                  background-size: cover;
+                  border-radius: 5px 5px 0 0;
+                  
+                  
+                  
                   .product {
+                    border-radius: 5px 5px 0 0;
                     width: 100%;
                     height: auto;
                   }
-                  @supports(object-fit: cover){
-                    .product{
-                      height: 100%;
-                      object-fit: cover;
-                      object-position: center center;
-                        }
-                      }  
-
                 }
                 .container-bot {
                   display: flex;
-                  justify-content: flex-start;
-                  height: 60px;
-                  border-top: .5px  black;
+                  flex-direction: column;
+                  margin-bottom: 0px;
+                  height: 200px !important;
+                  border-top: .5px solid grey;
+                  border-radius: 0 0 5px 5px;
+                  background-color: white;
+                  
+                    .precio {
+                      display: flex;
+                      margin-left: 15px;
+                    }
                     p {
+                      display: flex;
+                      justify-content: center;
+                      width: 200px;
+                      text-align: center;
                       opacity: 0;
                       transition: 0.3s all ease-in-out;
+                      
                     }
+                  }
                 }
             }
         }
-  }
+  
 
 
 
