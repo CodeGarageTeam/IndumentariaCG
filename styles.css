@@ -130,7 +130,7 @@
 
 header {
   width: 100%;
-  background-color: #FAFAFA;
+  background-color: #173F78;
   overflow: hidden;
   margin-bottom: 20px;
 }
@@ -143,9 +143,11 @@ header {
 }
 
 .logo {
-  font-size: 50px;
+  font-size: 60px;
   line-height: 100px;
   float: left;
+  color: #E5E5E5;
+  font-family: 'Bungee Shade', cursive;
 }
 
 header .buttoms {
@@ -154,22 +156,29 @@ header .buttoms {
 }
 
 header .buttoms a {
-  font-family: "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
-  color: #333;
+  font-family: 'Montserrat', sans-serif;
+  color: #FFFFFF;
   display: inline-block;
   text-decoration: none;
   padding: 10px 20px;
   line-height: normal;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
   cursor: pointer;
 }
 
+.buttoms ul li a {
+  display: inline-block;
+  color: black;
+  padding: 10px 20px;
+  font-size: 15px;
+}
+
 header .buttoms a:hover {
-  background: orange;
-  border-radius: 50px;
+  color: #ADB4C1;
+  border-radius: 40px;
 }
 
 .fondoFooter {
