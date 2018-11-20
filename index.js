@@ -1,5 +1,5 @@
 var elems = document.querySelectorAll('.carousel')
-var instances = M.Carousel.init(elems)
+var instances = M.Carousel.init(elems, ({fullWidth: true, indicators: true}))
 
 var elems = document.querySelectorAll('.dropdown-trigger');
 var instances = M.Dropdown.init(elems)

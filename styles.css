@@ -2,7 +2,9 @@
   padding: 0px;
   margin: 0px;
 }
-
+.carousel-slider{
+  height: 600px !important; 
+}
 .div {
   display: -webkit-box;
   display: -ms-flexbox;
