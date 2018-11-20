@@ -141,7 +141,7 @@
         }
         
         .buttoms  ul li a{
-         display:inline-block;
+         display:block;
             color: black;
             padding: 10px 20px;
             font-size: 15px;
@@ -155,6 +155,10 @@
           border-radius: 40px;
      }  
 
+          .dropdown-content li a{
+            position: relative;
+            top: 40px;
+          }
       
 
      .fondoFooter {
