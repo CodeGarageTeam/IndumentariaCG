@@ -3,6 +3,9 @@
     padding: 0px;
     margin: 0px;
   }
+  .carousel-slider{
+    height: 600px !important; 
+  }
   .div {
     display: flex;
 
@@ -98,37 +101,41 @@
 
      header{
             width: 100%;
-            background-color: #FAFAFA;
+            background-color: #173F78;
             overflow: hidden;
             margin-bottom: 20px; 
         }
 
-     .wrapper{
+    .wrapper{
             width:100%;
             max-width: 1000px;
             margin: auto;
             overflow: hidden;
         }
 
-     .logo{
-            font-size: 50px;
+    .logo{
+            font-size: 60px;
             line-height: 100px;
             float: left;
+            color: #E5E5E5;
+            font-family: 'Bungee Shade', cursive;          
+            
         }
 
-     header .buttoms{
+    header .buttoms{
             line-height: 100px;
             float: right;
+            
         }
 
-     header .buttoms a{
-            font-family: "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
-            color: #333;
+     header .buttoms a {
+            font-family: 'Montserrat', sans-serif;
+            color: #FFFFFF;
             display: inline-block;
             text-decoration: none;
             padding: 10px 20px;
             line-height: normal;
-            font-size: 20px;
+            font-size: 15px;
             font-weight: bold;
             -webkit-transition:  all 500ms ease;
             -o-transition: all 500ms ease;
@@ -136,13 +143,26 @@
             cursor: pointer;
         }
         
-     header .buttoms  a:hover{
-         background: orange;
-         border-radius: 50px;
-     }
-    
+        .buttoms  ul li a{
+         display:block;
+            color: black;
+            padding: 10px 20px;
+            font-size: 15px;
+           }
 
-     
+
+      
+    
+        header .buttoms  a:hover{ 
+          color:#ADB4C1;
+          border-radius: 40px;
+     }  
+
+          .dropdown-content li a{
+            position: relative;
+            top: 40px;
+          }
+      
 
      .fondoFooter {
   background: url(imagenes-josu/tiny-squares.png)
@@ -256,3 +276,4 @@
 
 
 //aca termina el css del carousel gigante de santi
+
