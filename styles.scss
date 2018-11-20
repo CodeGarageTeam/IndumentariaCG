@@ -19,13 +19,15 @@
   .container-section-product {
       display: flex;
       flex-direction: column;
-      height: 600px;
+      height: 1200px;
       background-color: #EDEDED;
 
         .container-list {
             display: flex;
             flex-direction: row;
             justify-content: center;
+            height: 400px;
+            position: static;
 
           .card {
             height: 100px;
@@ -39,7 +41,7 @@
               width: 200px;
               border-radius: 5px;
               margin: 40px;
-              margin-bottom: 70px;
+              margin-bottom: 0px;
               transition: all .2s ease;
               box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.24);
               &:hover {
@@ -60,7 +62,17 @@
                   background-image: url(imagenes-josu/product2.jpg) ;
                   background-size: cover;
                   border-radius: 5px 5px 0 0;
-                  
+                    .btn {
+                      position: absolute;
+                      width: 35px;
+                      height: 35px;
+                      -moz-border-radius: 50%;
+                      -webkit-border-radius: 50%;
+                      border-radius: 50%;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                    }
                   
                   
                   .product {
